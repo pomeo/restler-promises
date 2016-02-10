@@ -1,0 +1,52 @@
+{
+  "name": "restler-promises",
+  "homepage": "https://github.com/pomeo/restler-promises",
+  "version": "0.1.0",
+  "description": "restler with native promises",
+  "keywords": [
+    "restler",
+    "promises"
+  ],
+  "author": "Sergey Ovechkin <me@pomeo.me>",
+  "engines": {
+    "node": ">=4.0"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/pomeo/restler-promises.git"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "main": "./lib/index",
+  "dependencies": {
+    "restler": "^3.4.0"
+  },
+  "devDependencies": {
+    "babel": "^5.8.23",
+    "coveralls": "^2.11.4",
+    "istanbul": "^0.3.22",
+    "mocha": "^2.3.3",
+    "xo": "^0.9.0"
+  },
+  "scripts": {
+    "test": "xo && make test-once"
+  },
+  "bugs": {
+    "url": "https://github.com/pomeo/restler-promises/issues"
+  },
+  "xo": {
+    "esnext": true,
+    "space": true,
+    "rules": {
+      "space-before-function-paren": 0,
+      "curly": 0
+    },
+    "envs": [
+      "node",
+      "mocha"
+    ]
+  }
+}
